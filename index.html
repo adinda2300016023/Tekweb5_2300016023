@@ -4,27 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   </head>
   <body class="text-poppins bg-customwhite overflow-x-hidden">
-    <nav class="w-screen flex logo w-screen justify-center items-center space-x-80 p-4 bg-customWhite sticky top-0 bg-customwhite z-0">
-      <div class="flex ">
-        <img src="src/./asset/Logo.svg" class="mr-[20px]"/>
-        <h2 class="text-2xl font-semibold ">
-          Remind<span class="text-customblue">me</span>
-        </h2>
+    <nav class="bg-gray-100 h-16 flex items-center px-6 shadow-md fixed top-0 left-0 w-full z-10">
+      <div class="flex items-center space-x-2">
+          <img src="src/./asset/Logo.svg" alt="Logo" class="w-9 h-9">
+        <span class="text-lg font-semibold text-gray-700">Remind<span class="text-blue-600">me</span></span>
       </div>
-        <ul class="flex space-x-9 font-semibold">
-          <li class="hover:text-customblue">Home</li>
-          <li class="hover:text-customblue">Features</li>
-          <li class="hover:text-customblue">About Us</li>
-        </ul>
-        <button class="rounded-full border-2 py-2 px-12 text-customblue border-customblue ">
-          About App
+  
+      <div class="hidden md:flex space-x-8 text-gray-600 ml-6">
+        <a href="#" class="font-semibold text-blue-600">Home</a>
+        <a href="#" class="hover:text-blue-600">Features</a>
+        <a href="#" class="hover:text-blue-600">About us</a>
+      </div>
+  
+      <div class="ml-auto hidden md:flex">
+        <a href="link" class="border border-blue-600 text-blue-600 px-4 py-2 rounded-full hover:bg-blue-50">About App</a>
+      </div>
+  
+      <div class="md:hidden ml-auto">
+        <button id="mobile-menu-button" class="focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
         </button>
+      </div>
     </nav>
 
     <!-- hero -->
-     <section class="hero flex w-screen space-x-24 justify-center items-center h-auto  mb-[100px]">
+     <section class="hero flex w-screen space-x-24 justify-center items-center h-auto  mb-[100px] mt-16">
         <div class="hero-text w-[40%] mx-auto my-14 flex-col ml-[120px] mt-16">
           <h1 class="font-bold text-5xl leading-tight mb-12 ">Manage Schedule and Task Easy</h1>
           <p class=" font-lg text-[23px] space-y-5 text-customGray">Create and organize schedule and task deadline become better, easy manage and certainly no longer lagging behind schedule of activities and task</p>
